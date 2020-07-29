@@ -1,84 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<style>
-.button {
-  background-color: white;
-  border: none;
-  color: black;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border: 2px solid #555555;
-  will-change: transform;
-  box-shadow: 2px 5px 5px 2px rgba(0,0,0,.2);
-  -webkit-tap-highlight-color: transparent;
-}
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <style>
+  .button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #555555;
+    box-shadow: 2px 5px 5px 2px rgba(0,0,0,.2);
+    -webkit-tap-highlight-color: transparent;
+  }
 
-.button:hover {
-  transition-duration: 0.1s;
-}
+  .button:hover {
+    transition-duration: 0.1s;
+  }
 
-.button:active {
-  transform: translateY(4px);
-  box-shadow: 1px 1px 5px 2px rgba(0,0,0,.175);
-}
+  .button:active {
+    transform: translateY(4px);
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,.175);
+  }
 
-.button1:hover {
-  background-color: black;
-  color: white;
-}
+  .button1:hover {
+    background-color: #2d4059;
+    color: white;
+  }
 
-.button2:hover {
-  background-color: #008CBA;
-  color: white;
-}
+  .button2:hover {
+    background-color: #ea5455;
+    color: white;
+  }
 
-.button3:hover {
-  background-color: #f44336;
-  color: white;
-}
+  .button3:hover {
+    background-color: #f07b3f;
+    color: white;
+  }
 
-.button4:hover {background-color: #e7e7e7;}
+  .button4:hover {
+    background-color: #ffd460;
+    color: white;
+  }
+  
+  #name{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 25px; 
+    font-size: 2em;
+  }
+  #logo{
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px 2px rgba(0,0,0,.2);
+    width: 36px;
+    height: 36px;
+  }
+  #logo:hover{
+    transition-duration: .5s;
+    transform: scale(1.5,1.5) rotate(360deg);
+    box-shadow: 2px 5px 20px 5px rgba(0,0,0,.2);
+  }
 
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
-</style>
-<title>Joel Koreth</title>
+  #navbar{
+    max-width: 1500px;
+    margin: 50px auto;
+  }
+
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #title{
+    display:flex;
+    align-items: center;
+  }
+
+  
+  </style>
+  <title>Joel Koreth</title>
 </head>
+
 <body ontouchstart="">
-<center>
-<h2>Joel Koreth</h2>
-<button  class="button button1">Projects</button>
-<button  class="button button2">Blog</button>
-<button  class="button button3">Resume</button>
-<button  class="button button4">About</button>
-</center>
-<br>
-<hr>
+
+<div id="navbar">
+  <nav>
+    <div id="title">
+      <img  id="logo" src="./favicon-96x96.png" alt="Logo">
+      <h1 id="name">Joel Koreth</h1>
+    </div>
+    
+    <div id="navbarItems">
+      <button  class="button button1">Projects</button>
+      <button  class="button button2">Blog</button>
+      <button  class="button button3">Resume</button>
+      <button  class="button button4">About</button>
+    </div>
+  </nav>
+  <br>
+  <hr>
+</div>
+
+
 </body>
 </html>
-
