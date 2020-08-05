@@ -37,31 +37,13 @@
 
   .button:hover {
     transition-duration: 0.1s;
+    background-color: black;
+    color: white;
   }
 
   .button:active {
     transform: translateY(4px);
     box-shadow: 1px 1px 5px 2px rgba(0,0,0,.175);
-  }
-
-  .button1:hover {
-    background-color: #2d4059;
-    color: white;
-  }
-
-  .button2:hover {
-    background-color: #ea5455;
-    color: white;
-  }
-
-  .button3:hover {
-    background-color: #f07b3f;
-    color: white;
-  }
-
-  .button4:hover {
-    background-color: #ffd460;
-    color: white;
   }
   
   #name{
@@ -83,14 +65,14 @@
   }
 
   #navbar{
-    max-width: 1500px;
+    max-width: 900px;
     margin: 50px auto;
   }
 
   nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   
   #title{
@@ -113,10 +95,10 @@
     </div>
     
     <div id="navbarItems">
-      <button  class="button button1">Projects</button>
-      <button  class="button button2">Blog</button>
-      <button  class="button button3">Resume</button>
-      <button  class="button button4">About</button>
+      <button  class="button">About</button>
+      <button  class="button">Projects</button>
+      <button  class="button">Resume</button>
+      <button  class="button">Blog</button>
     </div>
   </nav>
   <br>
