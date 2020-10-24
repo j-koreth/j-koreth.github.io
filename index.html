@@ -20,68 +20,73 @@
   <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <style>
-  .button {
-    background-color: white;
-    border: none;
-    color: black;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border: 2px solid #555555;
-    box-shadow: 2px 5px 5px 2px rgba(0,0,0,.2);
-    -webkit-tap-highlight-color: transparent;
-  }
+    #navbarItems button {
+      background-color: white;
+      border: none;
+      color: black;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border: 2px solid #555555;
+      box-shadow: 2px 5px 5px 2px rgba(0,0,0,.2);
+      -webkit-tap-highlight-color: transparent;
+    }
 
-  .button:hover {
-    transition-duration: 0.1s;
-    background-color: black;
-    color: white;
-  }
+    #navbarItems button:hover {
+      transition-duration: 0.1s;
+      background-color: black;
+      color: white;
+    }
 
-  .button:active {
-    transform: translateY(4px);
-    box-shadow: 1px 1px 5px 2px rgba(0,0,0,.175);
-  }
-  
-  #name{
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 25px; 
-    font-size: 2em;
-  }
-  #logo{
-    border: 5px solid black;
-    border-radius: 5px;
-    box-shadow: 2px 5px 10px 2px rgba(0,0,0,.2);
-    width: 36px;
-    height: 36px;
-  }
-  #logo:hover{
-    transition-duration: .5s;
-    transform: scale(1.5,1.5) rotate(360deg);
-    box-shadow: 2px 5px 20px 5px rgba(0,0,0,.2);
-  }
+    #navbarItems button:active {
+      transform: translateY(4px);
+      box-shadow: 1px 1px 5px 2px rgba(0,0,0,.175);
+    }
+    
+    #name{
+      font-family: 'Montserrat', sans-serif;
+      margin: 0 25px; 
+      font-size: 2em;
+    }
+    #logo{
+      border: 5px solid black;
+      border-radius: 5px;
+      box-shadow: 2px 5px 10px 2px rgba(0,0,0,.2);
+      width: 36px;
+      height: 36px;
+    }
+    #logo:hover{
+      transition-duration: .5s;
+      transform: scale(1.5,1.5) rotate(360deg);
+      box-shadow: 2px 5px 20px 5px rgba(0,0,0,.2);
+    }
 
-  #navbar{
-    max-width: 900px;
-    margin: 50px auto;
-  }
+    #logo:active{
+      transition-duration: .25s;
+      transform: translateY(4px);
+      box-shadow: 2px 5px 10px 2px rgba(0,0,0,.2);
+    }
 
-  nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  #title{
-    display:flex;
-    align-items: center;
-  }
+    #navbar{
+      max-width: 900px;
+      margin: 50px auto;
+    }
 
-  
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    #title{
+      display:flex;
+      align-items: center;
+    }
   </style>
+  
   <title>Joel Koreth</title>
 </head>
 
@@ -95,10 +100,10 @@
     </div>
     
     <div id="navbarItems">
-      <button  class="button">About</button>
-      <button  class="button">Projects</button>
-      <button  class="button">Resume</button>
-      <button  class="button">Blog</button>
+      <button>About</button>
+      <button>Projects</button>
+      <button>Resume</button>
+      <button>Blog</button>
     </div>
   </nav>
   <br>
