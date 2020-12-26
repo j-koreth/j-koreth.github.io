@@ -1,0 +1,22 @@
+---
+layout: default
+title: Resume
+---
+<div id="resume">
+    <div class="grid-container">
+        <div class="grid-item actions">
+            <a class="clickable" href="{{ 'files/Res.pdf' | relative_url}}" target="_blank">Open</a>
+            <div>
+                <button id="prev" class="clickable">Previous</button>
+                <span style="margin: 0px 50px;">Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+                <button id="next" class="clickable">Next</button>
+            </div>
+            
+            <a class="clickable" href="{{ 'files/Res.pdf' | relative_url}}" download>Download</a>
+        </div>
+        <div class="grid-item">
+            <canvas id="the-canvas"></canvas>
+            <script src="{{'/assets/js/resume.js'| relative_url}}"></script>
+        </div>
+    </div>
+</div>
