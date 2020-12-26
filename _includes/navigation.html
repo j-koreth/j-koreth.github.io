@@ -1,0 +1,18 @@
+<div id="navbar">
+  <nav>
+    <div id="title">
+      <a href="/"> 
+        <img id="logo" src="{{'/assets/images/favicon-96x96.png' | relative_url}}" alt="Home (Click Me)">
+      </a>
+      <h1 id="name">Joel Koreth</h1>
+    </div>
+    
+    <div id="navbarItems">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" {% if page.url == item.link %} class="current"{% endif %}> {{ item.name }} </a>
+      {% endfor %}
+    </div>
+  </nav>
+  <br>
+  <hr>
+</div>

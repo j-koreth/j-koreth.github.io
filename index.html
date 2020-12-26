@@ -1,115 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="./android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-  <link rel="manifest" href="./manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <style>
-    #navbarItems button {
-      background-color: white;
-      border: none;
-      color: black;
-      padding: 10px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      cursor: pointer;
-      border: 2px solid #555555;
-      box-shadow: 2px 5px 5px 2px rgba(0,0,0,.2);
-      -webkit-tap-highlight-color: transparent;
-    }
+---
+layout: default
+title: Home
+---
 
-    #navbarItems button:hover {
-      transition-duration: 0.1s;
-      background-color: black;
-      color: white;
-    }
-
-    #navbarItems button:active {
-      transform: translateY(4px);
-      box-shadow: 1px 1px 5px 2px rgba(0,0,0,.175);
-    }
+<img src="{{'assets/images/ChicagoCropped.jpeg' | relative_url}}" id="ProfilePic" alt="Me!"> 
+<br>
+<div style="text-align: center;">
+    <p>Hey there! I'm Joel and I am a Junior at UIC studying Computer Science. </p>
     
-    #name{
-      font-family: 'Montserrat', sans-serif;
-      margin: 0 25px; 
-      font-size: 2em;
-    }
-    #logo{
-      border: 5px solid black;
-      border-radius: 5px;
-      box-shadow: 2px 5px 10px 2px rgba(0,0,0,.2);
-      width: 36px;
-      height: 36px;
-    }
-    #logo:hover{
-      transition-duration: .5s;
-      transform: scale(1.5,1.5) rotate(360deg);
-      box-shadow: 2px 5px 20px 5px rgba(0,0,0,.2);
-    }
-
-    #logo:active{
-      transition-duration: .25s;
-      transform: translateY(4px);
-      box-shadow: 2px 5px 10px 2px rgba(0,0,0,.2);
-    }
-
-    #navbar{
-      max-width: 900px;
-      margin: 50px auto;
-    }
-
-    nav{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    
-    #title{
-      display:flex;
-      align-items: center;
-    }
-  </style>
-  
-  <title>Joel Koreth</title>
-</head>
-
-<body ontouchstart="">
-
-<div id="navbar">
-  <nav>
-    <div id="title">
-      <img  id="logo" src="./favicon-96x96.png" alt="Logo">
-      <h1 id="name">Joel Koreth</h1>
-    </div>
-    
-    <div id="navbarItems">
-      <button>About</button>
-      <button>Projects</button>
-      <button>Resume</button>
-      <button>Blog</button>
-    </div>
-  </nav>
-  <br>
-  <hr>
+    <p>This is my personal website. It's built using Jekyll and hosted on Github Pages.</p> 
 </div>
-
-
-</body>
-</html>
