@@ -1,32 +1,41 @@
-url: "https://www.j-koreth.com" # the base hostname & protocol for your site
-collections: 
-  projects:
-    output: true
+---
+title: J Koreth.Github.Io
+timezone: UTC
+collections:
   mytags:
+    title: Mytags
     output: true
-
+  posts:
+    title: Posts
+    output: true
+  projects:
+    title: Projects
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "mytags"
-    values:
-      layout: "mytag"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-  
+- scope:
+    path: ''
+    type: projects
+  values:
+    layout: project
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: mytags
+  values:
+    layout: mytag
+- scope:
+    path: ''
+  values:
+    layout: default
+url: https://www.j-koreth.com
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-seo-tag
