@@ -2,15 +2,23 @@
 
 #content :is(h1, h2, h3, h4, h5, h6) { font-family: 'Open Sans', sans-serif; }
 
-#ProfilePic { display: block; margin: auto; height: 200px; width: 200px; box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.2); border-radius: 25%; border: 1px solid; }
+#ProfilePic { width: 100%; }
 
-.actions { display: flex; align-items: center; justify-content: space-around; background-color: whitesmoke; }
+.container { text-align: center; border: 1px solid black; box-shadow: 0px 5px 7px 2px rgba(0, 0, 0, 0.25); display: flex; flex-direction: column; justify-content: space-around; border-radius: 16px; overflow: hidden; min-height: 250px; }
 
-.clickable { background-color: white; font-size: 15px; color: black; padding: 8px 15px; text-align: center; text-decoration: none; display: inline-block; font-family: 'Open Sans', sans-serif; cursor: pointer; border: 1px solid #555555; box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2); -webkit-tap-highlight-color: transparent; }
+.container a { text-decoration: none; color: black; }
+.container a:hover, .container a:focus { color: #912424; outline: none; }
 
-.clickable:hover { background-color: black; color: white; }
+.containeractions { border-top: 1px dotted black; padding: 15px; background-color: whitesmoke; text-align: left; }
 
-.clickable:active { transform: translateY(4px); box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2); }
+.actions { display: flex; align-items: center; justify-content: space-around; background-color: whitesmoke !important; flex-wrap: wrap; }
+
+.button { background-color: white; font-size: 15px; color: black; padding: 8px 15px; text-align: center; text-decoration: none; display: inline-block; font-family: 'Open Sans', sans-serif; border: 1px solid #555555; }
+.button:hover, .button:focus { background-color: black; color: white !important; }
+
+.clickable { box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2); -webkit-tap-highlight-color: transparent; cursor: pointer; }
+.clickable:hover, .clickable:focus { box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2); }
+.clickable:active { transform: translateY(4px); box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.1); }
 
 .grid-container { display: grid; grid-template-columns: auto; background-color: black; padding: 1px; grid-row-gap: 1px; }
 
@@ -20,15 +28,15 @@ time { font-size: 15px; color: grey; }
 
 #the-canvas { border: 1px solid black; direction: ltr; }
 
-.listofposts { display: grid; margin: 0px; grid-template-columns: auto; grid-row-gap: 1px; list-style-type: none; }
+.listofpostsheader { display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; }
 
-.postpreview { padding: 20px; margin: 25px; border: 1px solid; box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.2); }
+.listofposts { margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: minmax(150px, auto); grid-gap: 20px; list-style-type: none; padding: 0px; }
 
-.postpreview:hover { transition-duration: .5s; transition-property: all; border-color: #912424; }
+.posttitle { padding: 10px; }
 
-.postpreview:hover > hr { color: #912424; }
+.postsummary { padding: 50px 20px; }
 
-#navbarItems a { background-color: white; color: black; margin: 5px; padding: 10px 32px; text-align: center; text-decoration: none; display: inline-block; font-family: 'Open Sans', sans-serif; cursor: pointer; border: 2px solid #555555; box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.2); -webkit-tap-highlight-color: transparent; }
+#navbarItems a { background-color: white; color: black; margin: 5px; padding: 10px 32px; text-align: center; text-decoration: none; display: inline-block; font-family: 'Open Sans', sans-serif; cursor: pointer; border: 1px solid black; box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.2); -webkit-tap-highlight-color: transparent; }
 
 #navbarItems a:hover { background-color: black; color: white; }
 

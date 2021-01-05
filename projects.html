@@ -2,5 +2,24 @@
 layout: default
 title: Projects
 ---
-<h1>Here will lie my projects: </h1>
-<p>This is under construction!</p>
+<div class="listofpostsheader">
+    <h1>Projects - </h1>
+</div>
+
+<div class="listofposts">
+    {% for project in site.projects %}
+    <div class="container">
+        <h2 class="posttitle"> <a href="{{ project.url}}"> {{ project.name }}</a> </h2>
+        <p class="postsummary"> {{ project.summary }}</p>
+
+        {% if project.mytags %}
+        <div class="containeractions">
+          {% for ltag in project.mytags %}
+            {% assign mytag = site.mytags | where: 'title', ltag %}
+              <a class="clickable button" href="{{ mytag[0].url  }}">{{ mytag[0].title }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>

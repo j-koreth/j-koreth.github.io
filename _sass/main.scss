@@ -9,23 +9,51 @@
 }
 
 #ProfilePic {
-  display: block;
-  margin: auto;
-  height: 200px;
-  width: 200px;
-  box-shadow: 2px 5px 10px 2px rgba(0,0,0,.2);
-  border-radius: 25%;
-  border: 1px solid;
+  width: 100%;
 }
+
+.container{
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 0px 5px 7px 2px rgba(0,0,0,.25);   
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+	border-radius: 16px;
+  overflow: hidden;
+  min-height: 250px;
+
+}
+
+.container a{
+  text-decoration: none;
+	color: black;
+
+
+	&:hover,
+	&:focus {
+		color: #912424;
+		outline: none;
+	}
+}
+
+.containeractions{
+  border-top: 1px dotted black; 
+  padding: 15px;
+  background-color: whitesmoke;
+  text-align: left;
+}
+
 
 .actions{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: whitesmoke;
+  background-color: whitesmoke !important;
+  flex-wrap: wrap;
 }
 
-.clickable {
+.button{
   background-color: white;
   font-size: 15px;
   color: black;
@@ -34,21 +62,31 @@
   text-decoration: none;
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  cursor: pointer;
   border: 1px solid #555555;
+
+	&:hover,
+	&:focus {
+    background-color: black;
+    color: white !important;
+  }
+}
+
+.clickable {
   box-shadow: 1px 2px 3px 1px rgba(0,0,0,.2);
   -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+
+	&:hover,
+	&:focus {
+    box-shadow: 0px 1px 3px 1px rgba(0,0,0,.2);
+  }
+
+  &:active{
+    transform: translateY(4px);
+    box-shadow: 0px 1px 3px 1px rgba(0,0,0,.1);
+  }
 }
 
-.clickable:hover {
-  background-color: black;
-  color: white;
-}
-
-.clickable:active{
-  transform: translateY(4px);
-  box-shadow: 0px 1px 3px 1px rgba(0,0,0,.2);
-}
 
 .grid-container {
   display: grid;
@@ -73,28 +111,29 @@ time{
   border: 1px solid black;
   direction: ltr;
 }
+.listofpostsheader{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 .listofposts{
+  margin: 0 auto;
   display: grid;
-  margin: 0px;
-  grid-template-columns: auto;
-  grid-row-gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(150px, auto);
+  grid-gap: 20px;
   list-style-type: none; 
+  padding:0px
 }
 
-.postpreview{
-  padding: 20px;
-  margin: 25px;
-  border: 1px solid;
-  box-shadow: 2px 5px 10px 2px rgba(0,0,0,.2);
+
+.posttitle{
+  padding: 10px;
 }
 
-.postpreview:hover {
-  transition-duration: .5s;
-  transition-property: all;
-  border-color: #912424;
+.postsummary{
+  padding: 50px 20px;
 }
 
-.postpreview:hover > hr{
-  color: #912424;
-}

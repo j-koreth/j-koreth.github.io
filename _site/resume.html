@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="j-koreth.github.io" />
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-icon-72x72.png">
@@ -23,8 +24,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <title>Joel Koreth | Resume</title>
-    <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/styles.css ">
 
   </head>
@@ -55,17 +55,19 @@
 </div>
 
     <div id="content">  
-      <div id="resume">
+      <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+
+<div id="resume">
     <div class="grid-container">
         <div class="grid-item actions">
-            <a class="clickable" href="/files/Res.pdf" target="_blank">Open</a>
+            <a class="clickable button" href="/files/Res.pdf" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Open</a>
             <div>
-                <button id="prev" class="clickable">Previous</button>
+                <button id="prev" class="clickable button">Previous</button>
                 <span style="margin: 0px 50px;">Page: <span id="page_num"></span> / <span id="page_count"></span></span>
-                <button id="next" class="clickable">Next</button>
+                <button id="next" class="clickable button">Next</button>
             </div>
             
-            <a class="clickable" href="/files/Res.pdf" download>Download</a>
+            <a class="clickable button" href="/files/Res.pdf" download><i class="fa fa-download" aria-hidden="true"></i> Download</a>
         </div>
         <div class="grid-item">
             <canvas id="the-canvas"></canvas>

@@ -2,17 +2,19 @@
 layout: default
 title: Resume
 ---
+<script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+
 <div id="resume">
     <div class="grid-container">
         <div class="grid-item actions">
-            <a class="clickable" href="{{ 'files/Res.pdf' | relative_url}}" target="_blank">Open</a>
+            <a class="clickable button" href="{{ 'files/Res.pdf' | relative_url}}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Open</a>
             <div>
-                <button id="prev" class="clickable">Previous</button>
+                <button id="prev" class="clickable button">Previous</button>
                 <span style="margin: 0px 50px;">Page: <span id="page_num"></span> / <span id="page_count"></span></span>
-                <button id="next" class="clickable">Next</button>
+                <button id="next" class="clickable button">Next</button>
             </div>
             
-            <a class="clickable" href="{{ 'files/Res.pdf' | relative_url}}" download>Download</a>
+            <a class="clickable button" href="{{ 'files/Res.pdf' | relative_url}}" download><i class="fa fa-download" aria-hidden="true"></i> Download</a>
         </div>
         <div class="grid-item">
             <canvas id="the-canvas"></canvas>

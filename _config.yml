@@ -1,4 +1,31 @@
 url: "https://www.j-koreth.com" # the base hostname & protocol for your site
+collections: 
+  projects:
+    output: true
+  mytags:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "mytags"
+    values:
+      layout: "mytag"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  
 plugins:
   - jekyll-feed
   - jekyll-sitemap
