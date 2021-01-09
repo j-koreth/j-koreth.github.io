@@ -15,6 +15,7 @@ layout: default
 
         {% if project.mytags %}
         <div class="containeractions">
+          Tags: 
           {% for ltag in project.mytags %}
             {% assign mytag = site.mytags | where: 'title', ltag %}
               <a class="clickable button" href="{{ mytag[0].url  }}">{{ mytag[0].title }}</a>
