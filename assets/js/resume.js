@@ -89,7 +89,7 @@ document.getElementById('next').addEventListener('click', onNextPage);
 /**
  * Asynchronously downloads PDF.
  */
-pdfjsLib.getDocument('/files/Res.pdf').promise.then(function(pdfDoc_) {
+pdfjsLib.getDocument('assets/files/Res.pdf').promise.then(function(pdfDoc_) {
   pdfDoc = pdfDoc_;
   document.getElementById('page_count').textContent = pdfDoc.numPages;
 

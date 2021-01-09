@@ -8,16 +8,16 @@ layout: default
 <div id="resume">
     <div class="grid-container">
         <div class="grid-item actions">
-            <a class="clickable button" href="{{ 'files/Res.pdf' | relative_url}}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Open</a>
+            <a class="clickable button" href="{{ 'assets/files/Res.pdf' | relative_url}}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Open</a>
             <div>
                 <button id="prev" class="clickable button">Previous</button>
                 <span style="margin: 0px 50px;">Page: <span id="page_num"></span> / <span id="page_count"></span></span>
                 <button id="next" class="clickable button">Next</button>
             </div>
             
-            <a class="clickable button" href="{{ 'files/Res.pdf' | relative_url}}" download><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+            <a class="clickable button" href="{{ 'assets/files/Res.pdf' | relative_url}}" download><i class="fa fa-download" aria-hidden="true"></i> Download</a>
         </div>
-        <div class="grid-item">
+        <div class="grid-item"> 
             <canvas id="the-canvas"></canvas>
             <script src="{{'/assets/js/resume.js'| relative_url}}"></script>
         </div>

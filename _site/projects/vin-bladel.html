@@ -58,6 +58,48 @@
       <h1> VIN-Bladel </h1>
 <p> An iOS app to decode VINs powered by the NHTSA API. </p>
 
+<p><img src="/assets/images/Vin-Bladel.png" /></p>
+
+<p>The iOS app that manages the John Hersey High School Automobile Repair service.
+The app utilizes Firebase to store the customers, vehicles, past invoices, and the parts and services offered. A user can scan/type in a car VIN or search a customer by name to bring up the information of an old vehicle or to add a new customer/car to the database. The students doing the repairs have the option to select the maintenance they’re doing and send an invoice to the customer’s email when the repair is complete.</p>
+
+<h2 id="features">Features</h2>
+<ul>
+  <li>Scan or manually input a VIN or even look up an old customer by name to pull up their information and their vehicle.</li>
+  <li>Uses the <a href="https://vpic.nhtsa.dot.gov/api/">NHTSA API</a> for VIN Decoding</li>
+  <li>Displays the following keys from the API
+    <ul>
+      <li>Make</li>
+      <li>Model</li>
+      <li>Model Year</li>
+      <li>Displacement</li>
+      <li>Cylinder</li>
+      <li>Transmission</li>
+      <li>Drive type</li>
+      <li>Submodel</li>
+    </ul>
+  </li>
+  <li>Firebase Integration
+    <ul>
+      <li>Add a new customer and identify and update a previous customer</li>
+      <li>Add a new customer and identify and update a previous vehicle</li>
+      <li>Look through a vehicle’s past maintenance history and update when new reports are made</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+<p>Install <a href="https://firebase.google.com/docs/ios/setup#add_the_sdk">Firebase</a></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/j-koreth/VIN-Bladel.git
+<span class="nb">cd </span>VIN-Bladel
+pod init
+</code></pre></div></div>
+
+<video width="200" height="400" muted="" controls="">
+  <source src="/assets/files/VIN-Bladel.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
 
     </div>
