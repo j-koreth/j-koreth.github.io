@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-05T03:00:45-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">j-koreth.github.io</title><entry><title type="html">Hello World!</title><link href="http://localhost:4000/2020/12/21/test.html" rel="alternate" type="text/html" title="Hello World!" /><published>2020-12-21T00:00:00-06:00</published><updated>2020-12-21T00:00:00-06:00</updated><id>http://localhost:4000/2020/12/21/test</id><content type="html" xml:base="http://localhost:4000/2020/12/21/test.html">&lt;p&gt;This should be my first post.&lt;/p&gt;</content><author><name></name></author><summary type="html">The beginning of the journey. Subscribe above to follow along with your favorite RSS reader.</summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-09T21:36:52+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">J Koreth.Github.Io</title><entry><title type="html">So You’ve Made a Website.</title><link href="http://localhost:4000/2021/01/03/second.html" rel="alternate" type="text/html" title="So You’ve Made a Website." /><published>2021-01-03T00:00:00+00:00</published><updated>2021-01-03T00:00:00+00:00</updated><id>http://localhost:4000/2021/01/03/second</id><content type="html" xml:base="http://localhost:4000/2021/01/03/second.html">&lt;p&gt;It’s 3 AM on a Tuesday night here and I’ve finally feel like I’m at a place where I can call this a website.&lt;/p&gt;
+
+&lt;p&gt;Let me be clear though this is definitely not done.&lt;/p&gt;
+
+&lt;h3 id=&quot;issues-include&quot;&gt;Issues include:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An Actual Responsive Design&lt;/li&gt;
+  &lt;li&gt;SEO&lt;/li&gt;
+  &lt;li&gt;Various Accessibility Issues&lt;/li&gt;
+  &lt;li&gt;General Optimization&lt;/li&gt;
+  &lt;li&gt;Add previous projects&lt;/li&gt;
+  &lt;li&gt;Fix tagging&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In spite of all the above, the website is at least functional for the most part and I’ve learned a ton while making it!&lt;/p&gt;</content><author><name></name></author><summary type="html">I've (somewhat) made a website.</summary></entry><entry><title type="html">Hello World!</title><link href="http://localhost:4000/2020/12/21/test.html" rel="alternate" type="text/html" title="Hello World!" /><published>2020-12-21T00:00:00+00:00</published><updated>2020-12-21T00:00:00+00:00</updated><id>http://localhost:4000/2020/12/21/test</id><content type="html" xml:base="http://localhost:4000/2020/12/21/test.html">&lt;p&gt;So what is this?&lt;/p&gt;
+
+&lt;p&gt;I wanted to make this website to write about some of my side projects (and in part to hold myself accountable to finish them).&lt;/p&gt;</content><author><name></name></author><summary type="html">The beginning of the journey. Subscribe above to follow along with your favorite RSS reader.</summary></entry></feed>

@@ -12,9 +12,9 @@ layout: default
     {% for post in site.posts %}
     <li class="container">
         <div>
-        <h3 class="posttitle">
+        <h2 class="posttitle">
           <a href="{{ post.url }}">{{ post.title }}</a>
-        </h3>
+        </h2>
         <div class="postsummary">{{ post.excerpt }}</div>
       </div>
       {% if post.mytags %}
