@@ -28,7 +28,7 @@ The app utilizes Firebase to store the customers, vehicles, past invoices, and t
   * Add a new customer and identify and update a previous vehicle
   * Look through a vehicle's past maintenance history and update when new reports are made
   
-
+s
 ## Installation
 Install [Firebase](https://firebase.google.com/docs/ios/setup#add_the_sdk) 
 
