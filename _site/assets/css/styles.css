@@ -32,9 +32,9 @@ time { font-size: 15px; color: grey; }
 
 .listofposts { margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: minmax(150px, auto); grid-gap: 20px; list-style-type: none; padding: 0px; }
 
-.posttitle { padding: 10px; }
+.posttitle { padding: 5px; }
 
-.postsummary { padding: 50px 20px; }
+.postsummary { padding: 15px 20px; }
 
 #navbarItems a { background-color: white; color: black; margin: 5px; padding: 10px 32px; text-align: center; text-decoration: none; display: inline-block; font-family: 'Open Sans', sans-serif; cursor: pointer; border: 1px solid black; box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.2); -webkit-tap-highlight-color: transparent; }
 

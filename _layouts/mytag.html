@@ -4,4 +4,45 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
+
 {{ content }}
+
+{% assign taggedprojects =  site.projects | where_exp:"item", "item.mytags contains page.title" %}
+{% if taggedprojects.size != 0 %}
+
+<h2> Tagged Projects </h2>
+{% for project in taggedprojects %}
+
+<ul class="listofposts" style="grid-template-columns: repeat(4, 1fr);">
+    <li class="container" style="min-height: 50px;">
+        <div>
+            <h2 class="posttitle">
+              <a href="{{ project.url }}">{{ project.title }}</a>
+            </h2>
+            <div class="postsummary">{{ project.summary }}</div>
+          </div>
+    </li>
+</ul>
+
+{% endfor %}
+{% endif %}
+
+{% assign taggedposts =  site.posts | where_exp:"item", "item.mytags contains page.title" %}
+{% if taggedposts.size != 0 %}
+<h2> Tagged Posts </h2>
+
+{% for post in taggedposts %}
+
+<ul class="listofposts" style="grid-template-columns: repeat(4, 1fr);">
+    <li class="container" style="min-height: 0;">
+        <div>
+        <h2 class="posttitle">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <div class="postsummary">{{ post.excerpt }}</div>
+      </div>
+    </li>
+  </ul>
+
+{% endfor %}
+{% endif %}
