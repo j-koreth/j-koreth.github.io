@@ -8,7 +8,8 @@ layout: default
 </div>
 
 <div class="listofposts">
-    {% for project in site.projects %}
+    {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
+    {% for project in sortedProjects %}
     <div class="container">
         <h2 class="posttitle"> <a href="{{ project.url}}"> {{ project.name }}</a> </h2>
         <p class="postsummary"> {{ project.summary }}</p>

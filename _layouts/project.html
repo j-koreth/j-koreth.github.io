@@ -3,6 +3,9 @@ layout: default
 ---
 
 <h1> {{ page.name }} </h1>
+<time datetime="{{ page.date | date: '%Y-%m-%d' }}"> {{ page.date | date_to_long_string}} </time>
+
 <p> {{page.summary}} </p>
+
 
 {{ content }}
