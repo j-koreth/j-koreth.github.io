@@ -38,6 +38,8 @@ time { font-size: 15px; color: grey; }
 
 img { max-width: 100%; max-height: 100%; }
 
+hr { background-color: #912424; height: 1px; border: 0; }
+
 #navbarItems a { background-color: white; color: black; margin: 5px; padding: 10px 32px; text-align: center; text-decoration: none; display: inline-block; font-family: 'Open Sans', sans-serif; cursor: pointer; border: 1px solid black; box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.2); -webkit-tap-highlight-color: transparent; }
 
 #navbarItems a:hover { background-color: black; color: white; }
@@ -48,14 +50,30 @@ img { max-width: 100%; max-height: 100%; }
 
 #name { font-family: 'Montserrat', sans-serif; margin: 0 25px; font-size: 2em; }
 
-#logo { border: 5px solid #2D3A3D; border-radius: 5px; box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.2); width: 36px; height: 36px; will-change: transform; }
+#logo { border: 5px solid #2D3A3D; border-radius: 5px; box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.2); width: 36px; height: 36px; min-width: 36px; min-height: 36px; will-change: transform; }
 
 #logo:hover { transition-duration: .5s; transform: scale(1.5, 1.5) rotate(360deg); box-shadow: 2px 5px 20px 5px rgba(0, 0, 0, 0.2); }
 
 #logo:active { transition-duration: .25s; transform: translateY(4px); box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.2); }
 
-#navbar { max-width: 900px; margin: 50px auto; }
+#header { max-width: 900px; margin: 50px auto; }
 
 nav { display: flex; align-items: center; justify-content: space-between; }
 
 #title { display: flex; align-items: center; }
+
+.icon { display: none; }
+
+@media only screen and (max-width: 1000px) { .listofposts { display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: minmax(150px, auto); grid-gap: 20px; list-style-type: none; padding: 0px; }
+  nav { display: block; }
+  #navbarItems { transition: max-height .35s, opacity .8s; opacity: 0; max-height: 0; overflow: hidden; width: 100%; }
+  nav .icon { display: block; padding: 4px 14px; float: right; }
+  #title { float: left; }
+  #bar1, #bar2, #bar3 { width: 35px; height: 5px; margin: 6px 0; transition: 0.4s; background-color: black; }
+  .animate #bar1 { transform: rotate(-45deg) translate(-9px, 6px); }
+  .animate #bar2 { opacity: 0; }
+  .animate #bar3 { transform: rotate(45deg) translate(-8px, -8px); }
+  .responsive #navbarItems { opacity: 1; max-height: 1000px; }
+  #navbarItems a { border: none; box-shadow: none; width: 100%; margin: 0; padding: 10px 0px; } }
+@media only screen and (max-width: 650px) { .listofposts { display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: minmax(150px, auto); grid-gap: 20px; list-style-type: none; padding: 0px; }
+  .hide_mobile { display: none; } }
