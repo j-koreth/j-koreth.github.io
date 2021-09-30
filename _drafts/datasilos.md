@@ -2,7 +2,7 @@
 title: Data Siloes vs Identity
 date: 2021-05-12 00:00:00 Z
 layout: post
-excerpt: Should 
+excerpt: Should
 mytags: Self-Hosting
 ---
 

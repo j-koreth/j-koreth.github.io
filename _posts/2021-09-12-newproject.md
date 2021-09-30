@@ -2,7 +2,7 @@
 title: Found a New Side Project
 date: 2021-09-12 00:00:00 Z
 layout: post
-excerpt: Why is Rasbian still 32 bit? 
+excerpt: Why is Rasbian still 32 bit?
 mytags: Self-Hosting
 ---
 
