@@ -39,3 +39,7 @@ plugins:
 - jekyll-feed
 - jekyll-sitemap
 - jekyll-seo-tag
+
+
+tag_page_layout: mytags
+tag_page_dir: mytags
