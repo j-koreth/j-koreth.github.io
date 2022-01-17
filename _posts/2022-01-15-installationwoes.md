@@ -2,7 +2,7 @@
 title: Installation Woes
 date: 2022-01-15 00:00:00 Z
 layout: post
-excerpt: $CURRENTYEAR is not the Year of Linux 
+excerpt: "$CURRENTYEAR is not the Year of Linux"
 mytags: Self-Hosting
 ---
 
