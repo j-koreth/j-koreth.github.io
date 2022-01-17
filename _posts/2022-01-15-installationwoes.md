@@ -1,0 +1,11 @@
+---
+title: Installation Woes
+date: 2022-01-15 00:00:00 Z
+layout: post
+excerpt: $CURRENTYEAR is not the Year of Linux 
+mytags: Self-Hosting
+---
+
+In the end, I axed the pi for my self-hosting needs. I was running out of storage and I needed to migrate the Nextcloud installation to a 64-bit environment for Nextcloud News and Collabora. I had an old Dell laptop lying around and I decided to repurpose it as my new "server" for now. I know I've installed Linux Mint on it ages ago before reverting to Windows so I figured this would be a quick and painless process. I steered clear of Arch or Gentoo for time so I ended up trying to install Debian on it and then my problems started. 
+
+I had a vague memory that the laptop's wifi module was nonfree firmware and so had to opt for using a [Debian nonfree image](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current-live/amd64/iso-hybrid/). I can't completely rule out the rest of my problems didn't come from some curse by Stallman. I successfully booted up the graphical installer from the image and was initially relieved when I was able to connect to my Wifi on the networking step. As I got to the last screen, however, the installation froze. I tried it again and the same thing happened. Maybe I could've waited longer...? Who knows in the end. I moved to flashing Ubuntu and tried to install it again and I encountered similar issues with the installer freezing. I saw some users had some more success with networking disabled and voila, it made it to the end. I removed my flash drive, rebooted, and all I see is "Operation System Not Found". Tried again and the same message popped up. I was about to give up when I found this [question](https://superuser.com/questions/1683369/dell-xps-l5112z-on-boot-operation-system-not-found-after-ubuntu-install-but-af) which led me to this [site](http://cdimage.ubuntu.com/ubuntu-legacy-server/releases/20.04/release/) and the obscure 0 upvoted answer ended up solving headache. I'm not sure when Ubuntu stopped silently failing on devices on Legacy bootloaders nor do I know the difference between these two [sections]({{'assets/images/UbuntuLegacy.png' | relative_url}}) but it worked! It's kind of ironic considering I used to have to *disable* UEFI mode to get Linux working on other machines but I digress, at least this part is now over. 
