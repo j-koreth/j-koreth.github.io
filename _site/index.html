@@ -29,10 +29,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script>
-      function myFunction(hamburgerBun) {
+      function hamburgerBun(hamburgerBunInput) {
         var x = document.getElementById("mainNav");
         
-        hamburgerBun.classList.toggle("animate");  
+        hamburgerBunInput.classList.toggle("animate");  
         
         if (x.className === "") {
           x.className += "responsive";
@@ -53,7 +53,7 @@
       <h1 id="name">Joel Koreth</h1>
     </div>
     
-    <div href="javascript:void(0);" class="icon" onclick="myFunction(this)">
+    <div href="javascript:void(0);" class="icon" onclick="hamburgerBun(this)">
       <div id="bar1"></div>
       <div id="bar2"></div>
       <div id="bar3"></div>
@@ -86,7 +86,7 @@
 </div>
 <br>
 <div style="text-align: center;">
-    <p>Hey there! I'm Joel and I am a Senior at UIC studying Computer Science. </p>
+    <p>Hey there! I'm Joel and I'm a recent Computer Science graduate from University of Illinois. </p>
     <p>This is my personal website. It's built using Jekyll and hosted on Github Pages.</p> 
     <p>I love learning new material and I'm always looking for new challenges and experiences.</p>
 </div>
