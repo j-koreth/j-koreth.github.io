@@ -9,6 +9,10 @@
   --shadow-colors: 0, 0, 0;
 }
 
+a { 
+  color: inherit; 
+} 
+
 @media (prefers-color-scheme: dark) {
 	:root {
     --main-bg-color: #000000FF;
