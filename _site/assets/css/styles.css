@@ -5,7 +5,7 @@ a { color: inherit; }
 @media (prefers-color-scheme: dark) { :root { --main-bg-color: #000000FF; --secondary-bg-color: #1C1C1EFF; --tertiary-bg-color: #2C2C2EFF; --main-text-color: #FFFFFFFF; --secondary-text-color: #EBEBF599; --tertiary-text-color: #EBEBF54D; --separator-color: #54545899; --shadow-colors: 83, 83, 83; } }
 body { background-color: var(--main-bg-color); }
 
-#content { max-width: 900px; font-family: 'Roboto', sans-serif; margin: 50px auto; color: var(--secondary-text-color); }
+#content { max-width: 900px; font-family: 'Roboto', sans-serif; margin: 50px auto; color: var(--main-text-color); }
 
 #content :is(h1, h2, h3, h4, h5, h6) { font-family: 'Open Sans', sans-serif; color: var(--main-text-color); }
 
@@ -33,7 +33,7 @@ body { background-color: var(--main-bg-color); }
 
 .grid-item { background-color: var(--secondary-bg-color); text-align: center; padding: 5px; }
 
-time { font-size: 15px; color: var(--tertiary-text-color); }
+time { font-size: 15px; color: var(--secondary-text-color); }
 
 #the-canvas { border: 1px solid black; direction: ltr; }
 
