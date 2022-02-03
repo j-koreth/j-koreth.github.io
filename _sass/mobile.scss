@@ -1,11 +1,6 @@
 @media only screen and (max-width: 1000px) {
     .listofposts{
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: minmax(150px, auto);
-        grid-gap: 20px;
-        list-style-type: none; 
-        padding:0px
     }
 
     nav{
@@ -68,12 +63,7 @@
 
 @media only screen and (max-width: 650px) {
     .listofposts{
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: minmax(150px, auto);
-        grid-gap: 20px;
-        list-style-type: none; 
-        padding:0px
     }
 
   

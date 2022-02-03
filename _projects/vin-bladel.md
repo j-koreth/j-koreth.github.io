@@ -4,7 +4,7 @@ date: 2018-05-30 00:00:00 Z
 name: VIN-Bladel
 summary: An iOS app to decode VINs powered by the NHTSA API.
 mytags: iOS
-link: https://github.com/j-koreth/VIN-Bladel
+github: https://github.com/j-koreth/VIN-Bladel
 ---
 
 <img src="{{ 'assets/images/Vin-Bladel.png' | relative_url}}">

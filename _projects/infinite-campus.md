@@ -4,7 +4,7 @@ date: 2016-11-25 00:00:00 Z
 name: Infinite Campus
 summary: A Java desktop app for Infinite Campus made in Javafx.
 mytags: Java
-link: https://github.com/j-koreth/infinitecampus-desktop
+github: https://github.com/j-koreth/infinitecampus-desktop
 ---
 
 It currently displays "Recent Assignments" from Infinite Campus. It's set to work with D214's portal but can be changed in Scraper.java.

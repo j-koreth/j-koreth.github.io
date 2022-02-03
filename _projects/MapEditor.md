@@ -4,7 +4,7 @@ date: 2021-05-09 00:00:00 Z
 name: Map Editor
 summary: JavaFX Hexagonal Map Editor
 mytags: Java
-link: https://github.com/j-koreth/infinitecampus-desktop
+github: https://github.com/j-koreth/infinitecampus-desktop
 ---
 
 ## Features - 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1> {{ page.name }} </h1>
+<h1> {{ page.name }} {% if page.github %} <a href="{{ page.github }}"><i class="fa fa-github" aria-hidden="true"></i></a>  {% endif %}  </h1> 
 <time datetime="{{ page.date | date: '%Y-%m-%d' }}"> {{ page.date | date_to_long_string}} </time>
 
 <p> {{page.summary}} </p>
