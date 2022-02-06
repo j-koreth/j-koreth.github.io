@@ -6,7 +6,6 @@
       </a>
       <h1 id="name">Joel Koreth</h1>
     </div>
-    
     <div href="javascript:void(0);" class="icon" onclick="hamburgerBun(this)">
       <div id="bar1"></div>
       <div id="bar2"></div>
@@ -16,6 +15,11 @@
       {% for item in site.data.navigation %}
         <a href="{{ item.link }}" {% if page.url == item.link %} class="current"{% endif %}> {{ item.name }} </a>
       {% endfor %}
+      <a onclick="toggleTheme()">
+        <i class="fa fa-sun-o" aria-hidden="true"></i>
+        /
+        <i class="fa fa-moon-o" aria-hidden="true"></i>        
+      </a>
     </div>
   </nav>
   <br>

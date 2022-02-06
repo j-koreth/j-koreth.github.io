@@ -9,12 +9,8 @@
   --shadow-colors: 0, 0, 0;
 }
 
-a { 
-  color: inherit; 
-} 
-
 @media (prefers-color-scheme: dark) {
-	:root {
+  :root {
     --main-bg-color: #000000FF;
     --secondary-bg-color: #1C1C1EFF;
     --tertiary-bg-color: #2C2C2EFF;
@@ -25,6 +21,10 @@ a {
     --shadow-colors: 83, 83, 83;
 	}
 }
+
+a { 
+  color: inherit; 
+} 
 
 body {
   background-color: var(--main-bg-color);

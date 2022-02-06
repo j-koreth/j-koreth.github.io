@@ -30,6 +30,65 @@
     <meta name="description" content="Joel Koreth's personal website">
 
     <script>
+      function setWhiteTheme(){
+        console.log("White");
+        document.body.style.setProperty('--main-bg-color', '#f7f7f7');
+        document.body.style.setProperty('--secondary-bg-color', 'rgb(245, 245, 245)');
+        document.body.style.setProperty('--tertiary-bg-color', '#f0f0f0');
+        document.body.style.setProperty('--main-text-color', '#000000FF');
+        document.body.style.setProperty('--secondary-text-color', '#3C3C4399');
+        document.body.style.setProperty('--tertiary-text-color', '#3C3C434D');
+        document.body.style.setProperty('--separator-color', '#3C3C434A');
+        document.body.style.setProperty('--shadow-colors', '0, 0, 0');
+        localStorage.setItem("theme", "white");
+      }
+
+      function setDarkTheme(){
+          console.log("Black");
+          document.body.style.setProperty('--main-bg-color', '#000000FF');
+          document.body.style.setProperty('--secondary-bg-color', '#1C1C1EFF');
+          document.body.style.setProperty('--tertiary-bg-color', '#2C2C2EFF');
+          document.body.style.setProperty('--main-text-color', '#FFFFFFFF');
+          document.body.style.setProperty('--secondary-text-color', '#EBEBF599');
+          document.body.style.setProperty('--tertiary-text-color', '#EBEBF54D');
+          document.body.style.setProperty('--separator-color', '#54545899');
+          document.body.style.setProperty('--shadow-colors', ' 83, 83, 83');
+          
+          localStorage.setItem("theme", "dark");
+      }
+
+      function toggleTheme() {
+        var style = getComputedStyle(document.body);
+        console.log(style.getPropertyValue('--main-bg-color'));
+        var bg = style.getPropertyValue('--main-bg-color');
+        
+        if(bg == "#f7f7f7"){
+            setDarkTheme();
+        }
+        else{
+            setWhiteTheme();
+        }
+      }
+    </script>
+
+    <script>
+      function load() {
+        console.log("load event detected!");
+        const currentTheme = localStorage.getItem("theme");
+
+        if(currentTheme == "dark"){
+          console.log("Dark theme detected!");
+          setDarkTheme();
+        }
+        else{
+          console.log("White theme detected!");
+          setWhiteTheme();
+        }
+      }
+      window.onload = load;
+    </script>
+
+    <script>
       function hamburgerBun(hamburgerBunInput) {
         var x = document.getElementById("mainNav");
         
@@ -53,7 +112,6 @@
       </a>
       <h1 id="name">Joel Koreth</h1>
     </div>
-    
     <div href="javascript:void(0);" class="icon" onclick="hamburgerBun(this)">
       <div id="bar1"></div>
       <div id="bar2"></div>
@@ -69,6 +127,11 @@
       
         <a href="/blog.html" > Blog </a>
       
+      <a onclick="toggleTheme()">
+        <i class="fa fa-sun-o" aria-hidden="true"></i>
+        /
+        <i class="fa fa-moon-o" aria-hidden="true"></i>        
+      </a>
     </div>
   </nav>
   <br>
