@@ -3,73 +3,33 @@
   <head>
     <meta charset="utf-8">
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="J Koreth.Github.Io" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-<link rel="manifest" href="/assets/images/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/assets/images/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <title>Joel Koreth | HTML</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/styles.css ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Joel Koreth's personal website">
+    <script src="/assets/js/themeChange.js"></script>
 
-    <script>
-      function setWhiteTheme(){
-        console.log("White");
-        document.body.style.setProperty('--main-bg-color', '#f7f7f7');
-        document.body.style.setProperty('--secondary-bg-color', 'rgb(245, 245, 245)');
-        document.body.style.setProperty('--tertiary-bg-color', '#f0f0f0');
-        document.body.style.setProperty('--main-text-color', '#000000FF');
-        document.body.style.setProperty('--secondary-text-color', '#3C3C4399');
-        document.body.style.setProperty('--tertiary-text-color', '#3C3C434D');
-        document.body.style.setProperty('--separator-color', '#3C3C434A');
-        document.body.style.setProperty('--shadow-colors', '0, 0, 0');
-        localStorage.setItem("theme", "white");
-      }
-
-      function setDarkTheme(){
-          console.log("Black");
-          document.body.style.setProperty('--main-bg-color', '#000000FF');
-          document.body.style.setProperty('--secondary-bg-color', '#1C1C1EFF');
-          document.body.style.setProperty('--tertiary-bg-color', '#2C2C2EFF');
-          document.body.style.setProperty('--main-text-color', '#FFFFFFFF');
-          document.body.style.setProperty('--secondary-text-color', '#EBEBF599');
-          document.body.style.setProperty('--tertiary-text-color', '#EBEBF54D');
-          document.body.style.setProperty('--separator-color', '#54545899');
-          document.body.style.setProperty('--shadow-colors', ' 83, 83, 83');
-          
-          localStorage.setItem("theme", "dark");
-      }
-
-      function toggleTheme() {
-        var style = getComputedStyle(document.body);
-        console.log(style.getPropertyValue('--main-bg-color'));
-        var bg = style.getPropertyValue('--main-bg-color');
-        
-        if(bg == "#f7f7f7"){
-            setDarkTheme();
-        }
-        else{
-            setWhiteTheme();
-        }
-      }
-    </script>
 
     <script>
       function load() {

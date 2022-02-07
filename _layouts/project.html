@@ -9,3 +9,24 @@ layout: default
 
 
 {{ content }}
+
+
+{% assign taggedprojects =  site.posts | where_exp:"item", "item.project contains page.name" %}
+{% if taggedprojects.size != 0 %}
+
+    <h2> Tagged Projects </h2>
+    
+    <ul class="listofposts" style="">
+        {% for project in taggedprojects %}
+        <li class="container" style="min-height: 50px;">
+            <div>
+                <h2 class="posttitle">
+                    <a href="{{ project.url }}">{{ project.title }}</a>
+                </h2>
+                <div class="postsummary">{{ project.summary }}</div>
+                </div>
+        </li>
+        {% endfor %}
+    </ul>
+    
+    {% endif %}
