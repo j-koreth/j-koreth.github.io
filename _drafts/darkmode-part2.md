@@ -3,12 +3,11 @@ title: What Is the Easiest Way to Add Dark Mode to a Website? Part 2
 date: 2022-02-07 00:00:00 Z
 layout: post
 excerpt: Saving eyes with one CSS file at a time.
-mytags: 
-    - CSS
-    - HTML 
-    - JavaScript
-project:  Personal Website
-
+mytags:
+- CSS
+- HTML
+- JavaScript
+project: Personal Website
 ---
 
 In a previous post, I mentioned how to add dark mode to a website. Let's take this one step further by letting users choose the color pallete they prefer in spite of the default browser color scheme.
