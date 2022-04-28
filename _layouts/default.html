@@ -11,11 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Joel Koreth's personal website">
     <script src="{{'/assets/js/themeChange.js'| relative_url}}"></script>
-
+    <script src="{{'/assets/js/copyAndSelect.js'| relative_url}}"></script>
 
     <script>
       function load() {
-        console.log("load event detected!");
         const currentTheme = localStorage.getItem("theme");
 
         if(currentTheme == "dark"){

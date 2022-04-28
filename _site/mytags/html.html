@@ -29,11 +29,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Joel Koreth's personal website">
     <script src="/assets/js/themeChange.js"></script>
-
+    <script src="/assets/js/copyAndSelect.js"></script>
 
     <script>
       function load() {
-        console.log("load event detected!");
         const currentTheme = localStorage.getItem("theme");
 
         if(currentTheme == "dark"){
@@ -125,6 +124,23 @@
 
 
 
+
+
+<h2> Tagged Posts </h2>
+
+
+<ul class="listofposts" style="">
+  
+    <li class="container" style="min-height: 0;">
+        <div>
+        <h2 class="posttitle">
+          <a href="/2022/02/06/darkmode.html">What Is the Easiest Way to Add Dark Mode to a Website?</a>
+        </h2>
+        <div class="postsummary">Saving eyes with one CSS file at a time.</div>
+      </div>
+    </li>
+    
+  </ul>
 
 
     </div>

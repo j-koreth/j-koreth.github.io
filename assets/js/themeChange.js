@@ -16,7 +16,7 @@ function setWhiteTheme(){
       document.body.style.setProperty('--main-bg-color', '#000000FF');
       document.body.style.setProperty('--secondary-bg-color', '#1C1C1EFF');
       document.body.style.setProperty('--tertiary-bg-color', '#2C2C2EFF');
-      document.body.style.setProperty('--main-text-color', '#FFFFFFFF');
+      document.body.style.setProperty('--main-text-color', '#DDD');
       document.body.style.setProperty('--secondary-text-color', '#EBEBF599');
       document.body.style.setProperty('--tertiary-text-color', '#EBEBF54D');
       document.body.style.setProperty('--separator-color', '#54545899');

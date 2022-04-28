@@ -5,6 +5,7 @@ name: VIN-Bladel
 summary: An iOS app to decode VINs powered by the NHTSA API.
 mytags: iOS
 github: https://github.com/j-koreth/VIN-Bladel
+cover: assets/images/Vin-Bladel.png
 ---
 
 <img src="{{ 'assets/images/Vin-Bladel.png' | relative_url}}">
@@ -34,11 +35,21 @@ The app utilizes Firebase to store the customers, vehicles, past invoices, and t
 ## Installation
 Install [Firebase](https://firebase.google.com/docs/ios/setup#add_the_sdk) 
 
-``` sh
-git clone https://github.com/j-koreth/VIN-Bladel.git
-cd VIN-Bladel
-pod init
-```
+<div class="grid-container">
+    <div class="grid-item actions">
+        <button  class="clickable button" onclick="select(this)">Select</button> 
+        <button  class="clickable button" onclick="copy(this)"><i class="fa fa-clipboard" aria-hidden="true"></i> Copy</button>
+    </div>
+    <div class="grid-item codesnippet">
+        {% highlight bash %}
+        git clone https://github.com/j-koreth/VIN-Bladel.git
+        cd VIN-Bladel
+        pod init
+        {% endhighlight %}
+    </div>
+</div>
+
+
 
 <video width="200" height="400" muted controls>
   <source src="{{ 'assets/files/VIN-Bladel.mp4' | relative_url}}" type="video/mp4">

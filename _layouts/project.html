@@ -14,7 +14,7 @@ layout: default
 {% assign taggedprojects =  site.posts | where_exp:"item", "item.project contains page.name" %}
 {% if taggedprojects.size != 0 %}
 
-    <h2> Tagged Projects </h2>
+    <h2> Tagged Posts </h2>
     
     <ul class="listofposts" style="">
         {% for project in taggedprojects %}

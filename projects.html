@@ -11,6 +11,7 @@ layout: default
     {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
     {% for project in sortedProjects %}
     <div class="container">
+      {% if project.cover %} <a href="{{ project.url}}"><div class="postcover" style="background-image: url({{project.cover}});"></div> </a> {% endif %}
         <h2 class="posttitle"> <a href="{{ project.url}}"> {{ project.name }}</a> </h2>
         <p class="postsummary"> {{ project.summary }}</p>
 

@@ -29,11 +29,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Joel Koreth's personal website">
     <script src="/assets/js/themeChange.js"></script>
-
+    <script src="/assets/js/copyAndSelect.js"></script>
 
     <script>
       function load() {
-        console.log("load event detected!");
         const currentTheme = localStorage.getItem("theme");
 
         if(currentTheme == "dark"){
@@ -138,10 +137,20 @@ The app utilizes Firebase to store the customers, vehicles, past invoices, and t
 <h2 id="installation">Installation</h2>
 <p>Install <a href="https://firebase.google.com/docs/ios/setup#add_the_sdk">Firebase</a></p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/j-koreth/VIN-Bladel.git
-<span class="nb">cd </span>VIN-Bladel
-pod init
-</code></pre></div></div>
+<div class="grid-container">
+    <div class="grid-item actions">
+        <button class="clickable button" onclick="select(this)">Select</button> 
+        <button class="clickable button" onclick="copy(this)"><i class="fa fa-clipboard" aria-hidden="true"></i> Copy</button>
+    </div>
+    <div class="grid-item codesnippet">
+        
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">        git clone https://github.com/j-koreth/VIN-Bladel.git
+        <span class="nb">cd </span>VIN-Bladel
+        pod init
+        </code></pre></figure>
+
+    </div>
+</div>
 
 <video width="200" height="400" muted="" controls="">
   <source src="/assets/files/VIN-Bladel.mp4" type="video/mp4" />

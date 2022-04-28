@@ -5,6 +5,7 @@ name: Map Editor
 summary: JavaFX Hexagonal Map Editor
 mytags: Java
 github: https://github.com/j-koreth/MapEditor
+cover: https://raw.githubusercontent.com/j-koreth/MapEditor/master/screenshot.png
 ---
 
 ## Features - 

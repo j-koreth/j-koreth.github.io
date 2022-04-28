@@ -1,6 +1,7 @@
 @media only screen and (max-width: 1000px) {
     .listofposts{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+         repeat(2, 1fr);
     }
 
     nav{
@@ -8,7 +9,7 @@
       }
 
     #navbarItems {
-		transition: max-height .35s, opacity .8s;
+		transition: max-height .35s, opacity .7s;
 		opacity: 0;
 		max-height: 0;
 		overflow: hidden;
