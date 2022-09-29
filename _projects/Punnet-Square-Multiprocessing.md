@@ -5,6 +5,7 @@ name: Punnet-Square
 summary: "-- In Progress -- Descriptions for multiprocessing implementations of generating
   large Punnet Squares"
 mytags: Multiprocessing
+cover: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Punnett_Square_%28Green_Dominant%29.svg/640px-Punnett_Square_%28Green_Dominant%29.svg.png
 link: 
 ---
 

@@ -2,7 +2,7 @@
   link: /about.html
 - name: Projects
   link: /projects.html
-# - name: Resume
-#   link: /resume.html
+- name: Resume
+  link: /resume.html
 - name: Blog
   link: /blog.html
