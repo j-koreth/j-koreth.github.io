@@ -51,7 +51,7 @@ To put it all together here is what I use.
         <button  class="clickable button" onclick="copy(this)"><i class="fa fa-clipboard" aria-hidden="true"></i> Copy</button>
     </div>
     <div class="grid-item codesnippet">
-        {% highlight javascript linenos %}
+        {% highlight javascript %}
         function setWhiteTheme(){
             document.body.style.setProperty('--main-bg-color', '#f7f7f7');
             document.body.style.setProperty('--secondary-bg-color', 'rgb(245, 245, 245)');
