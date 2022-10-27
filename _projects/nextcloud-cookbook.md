@@ -10,19 +10,27 @@ mytags:
 github: https://github.com/Teifun2/nextcloud-cookbook-flutter
 cover: assets/images/nextcloud-cookbook/2732x2048bb.png
 --- 
-
-<a href="https://apps.apple.com/us/app/nextcloud-cookbook/id1619926634?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1665360000&h=87d711018a9b4c4324f6b4d0f036790f" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
-
-
 <center>
-  <img src="https://tools-qr-production.s3.amazonaws.com/output/apple-toolbox/256571b5eff9b2dbf2208746df27600b/23592ffb84186cf797783c6921281cdf.png">
+<a href="https://apps.apple.com/us/app/nextcloud-cookbook/id1619926634?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1665360000&h=87d711018a9b4c4324f6b4d0f036790f" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
 </center>
 
+<br>
+
+<center>
+  <!-- <img src="https://tools-qr-production.s3.amazonaws.com/output/apple-toolbox/256571b5eff9b2dbf2208746df27600b/23592ffb84186cf797783c6921281cdf.png"> -->
+   <img style="width: 200px" tabindex=1 src="https://tools-qr-production.s3.amazonaws.com/output/apple-toolbox/256571b5eff9b2dbf2208746df27600b/23592ffb84186cf797783c6921281cdf.png"/><span class="f"><img src="https://tools-qr-production.s3.amazonaws.com/output/apple-toolbox/256571b5eff9b2dbf2208746df27600b/23592ffb84186cf797783c6921281cdf.png" /></span>
+</center>
 Ported a Flutter app to iOS and published to the app store as well as contributed timer features.
 
 <script src="{{ 'assets/js/photogrid.js' | relative_url}}"></script>
 
-
+<style>
+  .f,.f *{position:fixed;max-width:100%;max-height:100%;top:50%;left:50%}
+.f *{transform:translate(-50%,-50%)}
+.f{display:none;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8)}
+*:focus+.f{display:block}
+img{cursor:pointer}
+</style>
 
 <div id="photogrid" class="grid-container">
       <div class="grid-item actions">
@@ -36,7 +44,7 @@ Ported a Flutter app to iOS and published to the app store as well as contribute
           <a id="download" class="clickable button" href="" download><i class="fa fa-download" aria-hidden="true"></i> Download</a>
       </div>
       <div class="grid-item"> 
-        <img src="" style="max-width: 300px">
+        <img style="width: 300px" tabindex=1 src=""/><span class="f"><img src="" /></span>
       </div>
   </div>
 
