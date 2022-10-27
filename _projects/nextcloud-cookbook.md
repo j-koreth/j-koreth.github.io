@@ -3,10 +3,10 @@ title: Nextcloud Cookbook
 date: 2022-10-10 00:00:00 Z
 name: Nextcloud Cookbook
 summary: Nextcloud Cookbook Mobile Client written in Flutter
-mytags: 
+mytags:
 - iOS
-- Flutter 
-- Dart 
+- Flutter
+- Dart
 github: https://github.com/Teifun2/nextcloud-cookbook-flutter
 cover: assets/images/nextcloud-cookbook/2732x2048bb.png
 --- 
