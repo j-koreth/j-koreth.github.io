@@ -9,7 +9,8 @@ mytags:
 - Dart
 github: https://github.com/Teifun2/nextcloud-cookbook-flutter
 cover: assets/images/nextcloud-cookbook/2732x2048bb.png
---- 
+---
+
 <center>
 <a href="https://apps.apple.com/us/app/nextcloud-cookbook/id1619926634?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1665360000&h=87d711018a9b4c4324f6b4d0f036790f" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
 </center>
