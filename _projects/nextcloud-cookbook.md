@@ -22,16 +22,6 @@ cover: assets/images/nextcloud-cookbook/2732x2048bb.png
 </center>
 Ported a Flutter app to iOS and published to the app store as well as contributed timer features.
 
-<script src="{{ 'assets/js/photogrid.js' | relative_url}}"></script>
-
-<style>
-  .f,.f *{position:fixed;max-width:100%;max-height:100%;top:50%;left:50%}
-.f *{transform:translate(-50%,-50%)}
-.f{display:none;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8)}
-*:focus+.f{display:block}
-img{cursor:pointer}
-</style>
-
 <div id="photogrid" class="grid-container">
       <div class="grid-item actions">
           <a id="open" class="clickable button" href="" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Open</a>
@@ -48,6 +38,6 @@ img{cursor:pointer}
       </div>
   </div>
 
-  <script type="text/javascript">
+<script type="text/javascript">
    const nextcloudcookbook = new PhotoGrid('photogrid', ['{{ 'assets/images/nextcloud-cookbook/1242x2688bb-2.png' | relative_url}}', '{{ 'assets/images/nextcloud-cookbook/1242x2688bb-3.png' | relative_url}}',  '{{ 'assets/images/nextcloud-cookbook/1242x2688bb-4.png' | relative_url}}',  '{{ 'assets/images/nextcloud-cookbook/1242x2688bb-5.png' | relative_url}}', '{{ 'assets/images/nextcloud-cookbook/1242x2688bb.png' | relative_url}}'])
 </script>
