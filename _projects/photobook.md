@@ -1,14 +1,15 @@
 ---
 title: Photobook
-date: 2022-8-10 00:00:00 Z
+date: 2022-08-10 00:00:00 Z
 name: Photobook
-summary: Example photobook that uses firebase for authentication and pulling images with caption. 
+summary: Example photobook that uses firebase for authentication and pulling images
+  with caption.
 mytags:
 - iOS
 - Android
 - Flutter
 - Dart
---- 
+---
 
 <div id="photobook" class="grid-container">
       <div class="grid-item actions">
