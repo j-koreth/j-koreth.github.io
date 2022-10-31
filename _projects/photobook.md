@@ -38,7 +38,7 @@ mytags:
           <a id="download" class="clickable button" href="" download><i class="fa fa-download" aria-hidden="true"></i> Download</a>
       </div>
       <div class="grid-item"> 
-        <video controls width="420"> </video>
+        <video controls style="width: 400px; max-width: 100%"> </video>
       </div>
   </div>
 
