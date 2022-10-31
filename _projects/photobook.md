@@ -25,7 +25,26 @@ mytags:
         <img style="width: 300px" tabindex=1 src=""/><span class="f"><img src="" /></span>
       </div>
   </div>
+
+<br>
+
+<div id="photobookvideo" class="grid-container">
+      <div class="grid-item actions">
+          <div>
+             <span> Recording </span>
+          </div>
+          
+          <a id="download" class="clickable button" href="" download><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+      </div>
+      <div class="grid-item"> 
+        <video controls width="420"> </video>
+      </div>
+  </div>
+
   
 <script type="text/javascript">
    const photobook = new PhotoGrid('photobook', ['{{ 'assets/images/photobook/screenshot.png' | relative_url}}', '{{ 'assets/images/photobook/screenshot2.png' | relative_url}}', '{{ 'assets/images/photobook/screenshot3.png' | relative_url}}', '{{ 'assets/images/photobook/screenshot4.png' | relative_url}}'])
+
+
+   const recording = new VideoContainer('photobookvideo', '{{ 'assets/images/photobook/progressive.mp4' | relative_url}}');
 </script>
