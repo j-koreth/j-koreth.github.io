@@ -20,10 +20,14 @@ class PhotoGrid {
         download.href = p1[0];
 
         let pagenumber = photogrid.querySelector('#page_num')
-        pagenumber.innerHTML = this.index + 1;
+        if(pagenumber){
+            pagenumber.innerHTML = this.index + 1;
+        }
 
         let pagecount = photogrid.querySelector('#page_count')
-        pagecount.innerHTML = this.photoarray.length;
+        if(pagecount){
+            pagecount.innerHTML = this.photoarray.length;
+        }
     }
 
     nextphoto(){

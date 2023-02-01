@@ -21,7 +21,8 @@ function setWhiteTheme(){
       document.body.style.setProperty('--tertiary-text-color', '#EBEBF54D');
       document.body.style.setProperty('--separator-color', '#54545899');
       document.body.style.setProperty('--shadow-colors', ' 83, 83, 83');
-      
+      document.body.style.setProperty('--grid-container-background', ' 215, 215, 215');
+
       localStorage.setItem("theme", "dark");
   }
 
