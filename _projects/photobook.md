@@ -1,6 +1,6 @@
 ---
 title: Photobook
-date: 2022-08-10 00:00:00 Z
+date: 2022-12-24 00:00:00 Z
 name: Photobook
 summary: Example photobook that uses firebase for authentication and pulling images
   with caption.
@@ -45,7 +45,6 @@ mytags:
   
 <script type="text/javascript">
    const photobook = new PhotoGrid('photobook', ['{{ 'assets/images/photobook/screenshot.png' | relative_url}}', '{{ 'assets/images/photobook/screenshot2.png' | relative_url}}', '{{ 'assets/images/photobook/screenshot3.png' | relative_url}}', '{{ 'assets/images/photobook/screenshot4.png' | relative_url}}'])
-
 
    const recording = new VideoContainer('photobookvideo', '{{ 'assets/images/photobook/progressive.mp4' | relative_url}}');
 </script>

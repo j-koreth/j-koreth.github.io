@@ -7,6 +7,7 @@
   --tertiary-text-color: #3C3C434D;
   --separator-color: #3C3C434A;
   --shadow-colors: 0, 0, 0;
+  --grid-container-background: rgb(215, 215, 215);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +20,7 @@
     --tertiary-text-color: #EBEBF54D;
     --separator-color: #54545899;
     --shadow-colors: 83, 83, 83;
+    --grid-container-background: rgb(62, 62, 62);
 	}
 }
 
@@ -32,7 +34,7 @@ body {
 
 #content {
   max-width: 900px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 50px auto;
   color: var(--main-text-color);
 
@@ -129,7 +131,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto;
-  background-color: black;
+  background-color: var(--grid-container-background);
   padding: 1px;
   grid-row-gap: 1px;
 }
