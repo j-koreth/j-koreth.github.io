@@ -7,7 +7,8 @@ function setWhiteTheme(){
     document.body.style.setProperty('--secondary-text-color', '#3C3C4399');
     document.body.style.setProperty('--tertiary-text-color', '#3C3C434D');
     document.body.style.setProperty('--separator-color', '#3C3C434A');
-    document.body.style.setProperty('--shadow-colors', '0, 0, 0');
+    document.body.style.setProperty('--shadow-colors', 'rgb(0, 0, 0)');
+    document.body.style.setProperty('--grid-container-background', 'rgb(215, 215, 215)');
     localStorage.setItem("theme", "white");
   }
 
@@ -20,8 +21,9 @@ function setWhiteTheme(){
       document.body.style.setProperty('--secondary-text-color', '#EBEBF599');
       document.body.style.setProperty('--tertiary-text-color', '#EBEBF54D');
       document.body.style.setProperty('--separator-color', '#54545899');
-      document.body.style.setProperty('--shadow-colors', ' 83, 83, 83');
-      document.body.style.setProperty('--grid-container-background', ' 215, 215, 215');
+      document.body.style.setProperty('--shadow-colors', 'rgb(83, 83, 83)');
+      document.body.style.setProperty('--grid-container-background', 'rgb(62, 62, 62)');
+
 
       localStorage.setItem("theme", "dark");
   }

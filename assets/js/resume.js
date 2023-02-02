@@ -89,7 +89,7 @@ document.getElementById('next').addEventListener('click', onNextPage);
 /**
  * Asynchronously downloads PDF.
  */
-pdfjsLib.getDocument('assets/files/Joel%20Koreth%20-%20Resume.pdf').promise.then(function(pdfDoc_) {
+pdfjsLib.getDocument('assets/files/JK.pdf').promise.then(function(pdfDoc_) {
   pdfDoc = pdfDoc_;
   document.getElementById('page_count').textContent = pdfDoc.numPages;
 
